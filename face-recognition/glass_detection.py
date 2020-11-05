@@ -8,7 +8,7 @@ def landmarks_to_np(landmarks, dtype='int'):
     num = landmarks.num_parts
 
     # initialize landmarks to (x,y) coordinates using numpy
-    coords = np.zeroes((num, 2), dtype=dtype)
+    coords = np.zeros((num, 2), dtype=dtype)
 
     ''' looping over the 68 facial landmarks and converting them to a tuple of (x,y) coordinates'''
     for i in range(num):
@@ -121,8 +121,8 @@ cap = cv2.VideoCapture(0)  # Turn on the camera
 
 while (cap.isOpened()):
     # Read video frame
-    img = cap.read()
-
+    bool, img = cap.read()
+    print(img)
     # Convert to grayscale
     gray = cv2.cvtColor(img, cv2.COLOR_RGB2GRAY)
 
