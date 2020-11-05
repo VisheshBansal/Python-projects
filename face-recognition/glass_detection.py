@@ -35,7 +35,7 @@ def get_eye_centers(img, landmarks):
     RIGHT_EYE_CENTER = np.array([np.int32(x_right), np.int32(x_right * k + b)])
 
     pts = np.vstack((LEFT_EYE_CENTER, RIGHT_EYE_CENTER))
-    cv2.polylines(img, [pts], False, (255, 0, 0), 1)  # 画回归线
+    cv2.polylines(img, [pts], False, (255, 0, 0), 1)  
     cv2.circle(img, (LEFT_EYE_CENTER[0], LEFT_EYE_CENTER[1]), 3, (0, 0, 255), -1)
     cv2.circle(img, (RIGHT_EYE_CENTER[0], RIGHT_EYE_CENTER[1]), 3, (0, 0, 255), -1)
 
