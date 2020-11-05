@@ -124,7 +124,7 @@ while (cap.isOpened()):
     img = cap.read()
 
     # Convert to grayscale
-    gray = cv2.cvtColor(img, cv2.COLOR_BGR2GRAY)
+    gray = cv2.cvtColor(img, cv2.COLOR_RGB2GRAY)
 
     # Face Detection
     rects = detector(gray, 1)
@@ -173,3 +173,4 @@ while (cap.isOpened()):
 
 cap.release()
 cv2.destroyAllWindows()
+
