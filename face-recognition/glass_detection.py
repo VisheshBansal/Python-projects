@@ -122,7 +122,6 @@ cap = cv2.VideoCapture(0)  # Turn on the camera
 while (cap.isOpened()):
     # Read video frame
     bool, img = cap.read()
-    print(img)
     # Convert to grayscale
     gray = cv2.cvtColor(img, cv2.COLOR_RGB2GRAY)
 
