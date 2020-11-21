@@ -1,5 +1,5 @@
 # Python Projects 
-Last Updated: 7th November, 2020
+Last Updated: 21st November, 2020
 ## Machine Learning Projects
 ### &emsp;A. Facial Recognition 
 > Some facial detection and recognition programs made using [OpenCV](https://github.com/opencv/opencv) Library and [Haar Cascade Classifier](https://docs.opencv.org/3.4/db/d28/tutorial_cascade_classifier.html). They are listed below as :
